@@ -5,6 +5,7 @@ import studyImg from '../../assets/images/icons/study.svg'
 import giveClassesImg from '../../assets/images/icons/give-classes.svg'
 import purpleHeartImg from '../../assets/images/icons/purple-heart.svg'
 import './styles.css'
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
   return (
@@ -20,14 +21,14 @@ const Landing = () => {
           className="hero-image"
         />
         <div className="buttons-container">
-          <a href="/study" className="study">
+          <Link to="/study" className="study">
             <img src={studyImg} alt="Estudar" />
             Estudar
-          </a>
-          <a href="/give-classes" className="give-classes">
+          </Link>
+          <Link to="/give-classes" className="give-classes">
             <img src={giveClassesImg} alt="Dar aulas" />
             Dar aulas
-          </a>
+          </Link>
         </div>
 
         <span className="total-connections">
