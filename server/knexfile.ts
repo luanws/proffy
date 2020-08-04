@@ -1,8 +1,8 @@
 import path from 'path'
-import knex from 'knex'
+import Knex from 'knex'
 
 
-const knexConfig: knex.Config = {
+const knexConfig: Knex.Config = {
     client: 'sqlite3',
     connection: {
         filename: path.resolve(__dirname, 'src', 'database', 'database.sqlite')
