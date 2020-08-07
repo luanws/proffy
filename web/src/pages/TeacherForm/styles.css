@@ -104,6 +104,10 @@
     color: var(--color-primary-dark);
 }
 
+#page-teacher-form main .schedule-item + .schedule-item {
+    margin-top: 4rem;
+}
+
 @media(min-width: 700px) {
     #page-teacher-form {
         max-width: 100vw;
@@ -134,5 +138,8 @@
     }
     #page-teacher-form main .schedule-item .input-block {
         margin-top: 0 !important;
+    }
+    #page-teacher-form main .schedule-item + .schedule-item {
+        margin-top: 2rem;
     }
 }

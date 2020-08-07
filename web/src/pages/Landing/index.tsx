@@ -42,7 +42,7 @@ const Landing = () => {
 
         <span className="total-connections">
           Total de {totalConnections} conexões já realizadas
-          <img src={purpleHeartImg} alt="Coração roxo"/>
+          <img src={purpleHeartImg} alt="Coração roxo" />
         </span>
       </div>
     </div>
