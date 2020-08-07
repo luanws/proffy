@@ -12,6 +12,7 @@ const Landing: React.FC = () => {
   const { navigate } = useNavigation()
 
   const navigateToGiveClassesPage = () => navigate('GiveClasses')
+  const navigateToStudyPage = () => navigate('Study')
 
   return (
     <ScrollView style={styles.container}>
@@ -31,7 +32,10 @@ const Landing: React.FC = () => {
         </Text>
 
         <View style={styles.buttonsContainer}>
-          <RectButton style={[styles.button, styles.buttonPrimary]}>
+          <RectButton
+            onPress={navigateToStudyPage}
+            style={[styles.button, styles.buttonPrimary]}
+          >
             <Image
               source={studyIcon}
             />

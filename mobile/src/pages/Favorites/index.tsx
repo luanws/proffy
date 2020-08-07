@@ -3,8 +3,8 @@ import { View } from 'react-native'
 
 import styles from './styles'
 
-const TeacherList: React.FC = () => {
+const Favorites: React.FC = () => {
   return <View />
 }
 
-export default TeacherList
+export default Favorites
