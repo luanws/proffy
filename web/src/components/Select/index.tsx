@@ -19,7 +19,7 @@ const Select: React.FC<Props> = (props) => {
           disabled
           selected
           hidden
-        >Selecione uma matéria</option>
+        >Selecione uma opção</option>
         {options.map(option => (
           <option
             key={option.value}
