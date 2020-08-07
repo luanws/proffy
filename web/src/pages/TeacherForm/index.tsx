@@ -3,6 +3,8 @@ import PageHeader from '../../components/PageHeader'
 import './styles.css'
 import Input from '../../components/Input'
 import warningIcon from '../../assets/images/icons/warning.svg'
+import TextArea from '../../components/TextArea'
+import Select from '../../components/Select'
 
 const TeacherForm = () => {
   return (
@@ -18,18 +20,34 @@ const TeacherForm = () => {
           <Input name="name" label="Nome completo" />
           <Input name="avatar" label="Avatar" />
           <Input name="whatsapp" label="WhatsApp" />
+          <TextArea name="bio" label="Biografia" />
         </fieldset>
 
         <fieldset>
           <legend>Sobre a aula</legend>
-          <Input name="subject" label="Matéria" />
+          <Select
+            name="subject"
+            label="Matéria"
+            options={[
+              { value: 'Artes', label: 'Artes'},
+              { value: 'Biologia', label: 'Biologia'},
+              { value: 'Ciências', label: 'Ciências'},
+              { value: 'Educação física', label: 'Educação física'},
+              { value: 'Física', label: 'Física'},
+              { value: 'Geografia', label: 'Geografia'},
+              { value: 'História', label: 'História'},
+              { value: 'Matemática', label: 'Matemática'},
+              { value: 'Português', label: 'Português'},
+              { value: 'Química', label: 'Química'},
+            ]}
+          />
           <Input name="cost" label="Custo da sua hora por aula" />
         </fieldset>
 
         <footer>
           <p>
-            <img src={warningIcon} alt="Aviso importante"/>
-            Importante <br/>
+            <img src={warningIcon} alt="Aviso importante" />
+            Importante <br />
             Preencha todos os dados
           </p>
           <button type="button">
