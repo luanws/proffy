@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <>
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor="#4d2ab2" />
       <Landing />
     </>
   )
